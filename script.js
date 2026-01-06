@@ -89,3 +89,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 500);
     }
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const checkBtn = setInterval(() => {
+        const btn = document.querySelector(".btn-checkout");
+        if (btn) {
+            clearInterval(checkBtn);
+            btn.onclick = function () {
+                window.location.href = "https://app.cakto.com.br/checkout-builder/710336";
+            };
+        }
+    }, 300);
+});
+
+
